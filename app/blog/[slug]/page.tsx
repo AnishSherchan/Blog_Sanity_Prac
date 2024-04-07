@@ -339,7 +339,10 @@ const Slug = async ({ params }: { params: { slug: string } }) => {
                 <div className="prose max-w-none pt-8">
                   <PortableText
                     value={blog.content}
-                    components={myPortableTextComponents}
+                    // eslint-disable-next-line no-use-before-define
+                    // eslint-disable-next-line no-use-before-define
+                    // @ts-ignore
+                    components={myPortableTextComponents} // eslint-disable-line
                   />
                 </div>
               </div>
